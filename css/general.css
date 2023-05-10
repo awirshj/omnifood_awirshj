@@ -1,0 +1,209 @@
+:root {
+	--color-primary: #d4af37;
+	--color-primary--darker: #b59427;
+	--color-primary--opacity: hsla(46, 65%, 52%, 0.2);
+	--color-background: #1c1c1c;
+	--color-background--lighter: #222222;
+	--color-background--lighter-1: #2b2b2b;
+	--color-background--opacity: #1c1c1c99;
+
+	--color-secondary--text: #8f9aa3;
+	--color-secondary--text--lighter: #b4bbc0;
+	--color-secondary--text--darker: #5d6d7e;
+	--color-thirtiary: #62443b;
+	--color-thirtiary--opacity: #6d4c41b3;
+	--color-thirtiary--lighter: #8b5a4e;
+	--color--green: #94d82d;
+	--color--yellow: #ffd43b;
+	--color--dark-red: #b30000;
+}
+/* linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg) */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	/* set 1rem to 10px as a default  */
+	font-size: 62.5%;
+	overflow-x: hidden;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	font-weight: 400;
+	line-height: 1;
+	overflow-x: hidden;
+	font-size: 1.6rem;
+}
+section {
+	background-color: var(--color-background);
+	border-top: 1.5px solid var(--color-primary--darker-1);
+	padding-top: 9.6rem;
+}
+a {
+	text-decoration: none;
+	font-family: inherit;
+	display: inline-block;
+}
+input {
+	caret-color: var(--color-primary);
+}
+input:focus,
+select:focus,
+form:focus,
+button:focus {
+	outline: none;
+	box-shadow: inset 0 0 0 2px var(--color-primary--darker-1);
+}
+input:focus {
+	color: var(--color-primary--darker);
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+		rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+	outline: none;
+	box-shadow: inset 0 0 0 2px var(--color-primary--darker-1);
+}
+footer {
+	background-color: var(--color-background--lighter);
+	padding-top: 9.6rem;
+	padding-bottom: 6.4rem;
+	border-top: 1.5px solid var(--color-primary--darker-1);
+}
+/* CONTAIENR */
+.container {
+	max-width: 125rem;
+	margin: 0 auto;
+	padding: 0 3.2rem;
+}
+
+/* BTN STYLE
+in html use a in dive and set the dive's classes to btn */
+.btn a {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--color-primary);
+	padding: 1.2rem 1.6rem;
+	border: 2px solid var(--color-primary--darker);
+	border-radius: 2px;
+	font-style: italic;
+	transition: all 0.3s;
+}
+.btn a:hover {
+	background-color: var(--color-background--opacity);
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+		rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+	/* border-radius: 15px; */
+	color: var(--color-primary--darker);
+	transform: translateY(-3px);
+}
+/* center contact in btn */
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__btn {
+	font-weight: 500;
+	color: var(--color-secondary--text--lighter);
+	padding: 0.8rem 1.4rem;
+	border: 2px solid var(--color-secondary--text);
+	border-radius: 9px;
+	transition: all 0.3s;
+	/* ---- */
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	font-weight: 600;
+}
+.btn--icon {
+	stroke: var(--color-secondary--text--lighter);
+	height: 2.4rem;
+	padding-top: 4px;
+	transition: all 0.3s;
+}
+.hero__btn:hover .btn--icon {
+	stroke: var(--color-primary--darker);
+	transform: scale(1.25);
+}
+.meals__btn--icon {
+	width: 2.4rem;
+	height: 2.4rem;
+}
+.hero__btn:hover .meals__btn--icon {
+	color: var(--color-primary--darker);
+}
+.hero__btn:hover {
+	border: 2px solid var(--color-primary);
+	background-color: var(--color-primary--opacity);
+	box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+		rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+/* HELPER CLASSES */
+.help--flex-row {
+	display: flex;
+	align-items: center;
+	gap: 2.4rem;
+}
+.help--center-text {
+	text-align: center;
+}
+.help--padding-left {
+	padding-left: 10rem;
+}
+/* HEADING */
+.heading--primary {
+	font-size: 5.2rem;
+	color: var(--color-primary);
+	font-weight: 700;
+	margin-bottom: 3.2rem;
+	font-style: italic;
+	line-height: 1.05;
+}
+.heading--secondary {
+	font-size: 4.4rem;
+	color: var(--color-secondary--text--lighter);
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: -0.75px;
+	margin-bottom: 9.6rem;
+}
+.heading--tertiary {
+	font-size: 3rem;
+	font-weight: 700;
+	font-style: italic;
+	color: var(--color-secondary--text--lighter);
+	letter-spacing: -1px;
+	margin-bottom: 4rem;
+}
+.heading--sub {
+	color: var(--color-primary--darker);
+	/* font-size: 1.4rem; */
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-bottom: 1.2rem;
+}
+.list-flex {
+	display: flex;
+	flex-direction: column;
+	gap: 1.6rem;
+	/*  */
+	list-style: none;
+}
+.list-flex .list-item {
+	color: var(--color-secondary--text);
+	display: flex;
+	align-items: center;
+	gap: 1.2rem;
+	font-weight: 500;
+}
+.list-flex .list-item .list-icon {
+	width: 3.2rem;
+	height: 3.2rem;
+}
