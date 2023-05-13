@@ -37,8 +37,9 @@
     ></script>
   </head>
   <body>
-<main>    <section class="section__hero">
-      <header class="header">
+<main>   
+   <section class="section__hero">
+      <header class="header ">
         <div>
           <a href="#">
             <img
@@ -75,7 +76,7 @@
             tastes and nutritional needs.
           </p>
           <div class="help--flex-row">
-            <div class="btn"><a href="#">Start Eating Well</a></div>
+            <div class="btn"><a href="#pricing">Start Eating Well</a></div>
             <a href="#how" class="hero__btn"
               >Learn More
               <svg
@@ -110,7 +111,7 @@
         </div>
       </div>
     </section>
-    <section class="section__featured">
+    <section class="section__featured ">
       <div class="container">
         <h1 class="featured--heading">AS FEATUERD IN</h1>
         <div class="featured--logos">
@@ -128,7 +129,7 @@
         </div>
       </div>
     </section>
-    <section class="section__how" id="how">
+    <section class="section__how " id="how">
       <div class="container help--padding-left">
         <div class="how--title">
           <p class="heading--sub">how it works</p>
@@ -188,7 +189,9 @@
               </p>
             </div>
             <figure class="box__step-img">
-              <img src="img/app/app-screen-2.png" alt="screen shot of app" />
+              <img 
+               class="step-img"
+              src="img/app/app-screen-2.png" alt="screen shot of app" />
             </figure>
           </div>
           <div class="operations__content operations__content--3">
@@ -205,13 +208,15 @@
               </p>
             </div>
             <figure class="box__step-img">
-              <img src="img/app/app-screen-3.png" alt="screen shot of app" />
+              <img 
+               class="step-img"
+              src="img/app/app-screen-3.png" alt="screen shot of app" />
             </figure>
           </div>
         </div>
       </div>
     </section>
-    <section class="section__meals" id="meal">
+    <section class="section__meals " id="meal">
       <!-- awm -->
       <div class="container help--center-text">
         <p class="heading--sub">Meals</p>
@@ -397,13 +402,14 @@
     </section>
     <section 
     id='testimonial'
-    class="section__testimonial">
+    class="section__testimonial ">
       <div class="container testimonial--title">
         <p class="heading--sub">Testimonial</p>
         <h2 class="heading--secondary">Once you try it, you can't go back!</h2>
       </div>
       <div class="container test__card-slider">
-        <div class="test__card-slide test__card-slide--1 test__card--active">
+        <div class="test__card-slide test__card-slide--1 test__card--active"
+        data-slide="1">
           <img
             class="test__card--img"
             src="img/testimonial/Ben Hadley.jpg"
@@ -415,7 +421,7 @@
           </blockquote>
           <p class="test--author">— Ben Hadley</p>
         </div>
-        <div class="test__card-slide test__card-slide--2">
+        <div class="test__card-slide test__card-slide--2 " data-slide="2">
           <img
             class="test__card--img"
             src="img/testimonial/ashley williams.jpg"
@@ -427,7 +433,7 @@
           </blockquote>
           <p class="test--author">— Ashley Williams</p>
         </div>
-        <div class="test__card-slide test__card-slide--3">
+        <div class="test__card-slide test__card-slide--3" data-slide="3">
           <img
             class="test__card--img"
             src="img/testimonial/Steve Miller.jpg"
@@ -439,7 +445,7 @@
           </blockquote>
           <p class="test--author">— Steve Miller</p>
         </div>
-        <div class="test__card-slide test__card-slide--4">
+        <div class="test__card-slide test__card-slide--4" data-slide="4">
           <img
             class="test__card--img"
             src="img/testimonial/Hannah Smith.jpg"
@@ -466,7 +472,7 @@
       </div>
       </div>
     </section>
-    <section class="section__pricing" id="pricing"> 
+    <section class="section__pricing " id="pricing"> 
 <div class="container pricing__title">
   <p class="heading--sub">Pricing</p>
   <h2 class="heading--secondary">Eating well without breaking the bank
@@ -576,7 +582,7 @@
 
 </div>
     </section>
-    <section class="section__cta" id="cta">
+    <section class="section__cta " id="cta">
       <div class="container">
         <div class="cta">
           <div class="cta__text-box">
@@ -611,8 +617,7 @@
         </div>
       </div>
     </section></main>
-    <footer>
-      <!-- awm -->
+    <footer class="section--hidden">
       <div class="container footer--container">
         <div class="footer--logo-col">
           <a href="#"

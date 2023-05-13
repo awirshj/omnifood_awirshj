@@ -37,13 +37,13 @@ body {
 	font-family: "Open Sans", sans-serif;
 	font-weight: 400;
 	line-height: 1;
-	overflow-x: hidden;
 	font-size: 1.6rem;
+	background-color: var(--color-background);
 }
 section {
-	background-color: var(--color-background);
 	border-top: 1.5px solid var(--color-primary--darker-1);
 	padding-top: 9.6rem;
+	transition: opacity 0.9s, transform 0.9s;
 }
 a {
 	text-decoration: none;
@@ -72,6 +72,12 @@ footer {
 	padding-top: 9.6rem;
 	padding-bottom: 6.4rem;
 	border-top: 1.5px solid var(--color-primary--darker-1);
+	transition: transform 0.9s, opacity 0.9s;
+}
+/* hidden sections/revealing section with scroll */
+.section--hidden {
+	opacity: 0;
+	transform: translateY(8rem);
 }
 /* CONTAIENR */
 .container {

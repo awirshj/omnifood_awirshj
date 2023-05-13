@@ -43,13 +43,20 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 9.6rem;
+	height: 96px;
 	padding-right: 3.2rem;
 	padding-left: 2.4rem;
 	width: 100%;
 	background-color: var(--color-background--opacity);
 	position: relative;
 }
+.header--sticky {
+	position: fixed !important;
+	top: 0;
+	z-index: 101;
+	border-bottom: 1px solid var(--color-primary--opacity);
+}
+
 .main-nav__list-links {
 	display: flex;
 	align-items: center;
@@ -214,8 +221,8 @@
 	pointer-events: none;
 	opacity: 0;
 	position: absolute;
-	transition: all 0.3s ease-out;
-	transform: translateY(85px);
+	transform: translateY(50px);
+	transition: all 0s;
 }
 .operations__content--active {
 	display: grid;
@@ -227,11 +234,12 @@
 	opacity: 100;
 	position: initial;
 	transform: translateY(0px);
+	transition: all 0.5s;
 }
 /* how it work img */
 .step-img {
 	width: 60%;
-	z-index: 1000;
+	z-index: 1;
 }
 .box__step-img {
 	display: grid;
@@ -465,22 +473,26 @@ div.test__card-slider {
 .test__card-slide--1 {
 	z-index: 99;
 	box-shadow: var(--color-primary--opacity) 0px 48px 100px 10px;
+	transition: all 0.2s !important;
 }
 .test__card-slide--2 {
 	z-index: 98;
 	opacity: 60%;
 	transform: translate(-58%, -51%) rotate(22deg);
+	transition: all 0.3s;
 }
 
 .test__card-slide--3 {
 	z-index: 97;
 	transform: translate(-57%, -50%) rotate(38deg);
 	opacity: 30%;
+	transition: all 0.3s;
 }
 .test__card-slide--4 {
 	z-index: 96;
 	transform: translate(-52%, -51%) rotate(48deg);
 	opacity: 10%;
+	transition: all 0.3s;
 }
 .test__card-slide--2 .testimonial--text,
 .test__card-slide--2 .test--author {
