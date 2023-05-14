@@ -48,7 +48,8 @@
               alt="omnifood-logo"
           /></a>
         </div>
-        <nav class="header--nav mobile--nav">
+        <!-- another class: 'mobile--nav' ,"mobile--nav-hidden" -->
+        <nav class="header--nav mobile--nav mobile--nav-hidden">
           <ul class="main-nav__list-links">
             <li class="main-nav__item"><a href="#how">How it works</a></li>
             <li class="main-nav__item"><a href="#meal">Meals</a></li>
@@ -411,8 +412,9 @@
         <div class="test__card-slide test__card-slide--1 test__card--active"
         data-slide="1">
           <img
-            class="test__card--img"
-            src="img/testimonial/Ben Hadley.jpg"
+            class="test__card--img lazy-img"
+            data-src="img/testimonial/Ben Hadley.jpg"
+            src="img/testimonial/Ben Hadley-lazy.jpg"
             alt="customer headshot"
           />
           <blockquote class="testimonial--text">
@@ -423,8 +425,9 @@
         </div>
         <div class="test__card-slide test__card-slide--2 " data-slide="2">
           <img
-            class="test__card--img"
-            src="img/testimonial/ashley williams.jpg"
+            class="test__card--img lazy-img"
+            data-src="img/testimonial/ashley williams.jpg"
+            src="img/testimonial/ashley williams-lazy.jpg"
             alt="ashley williams picture"
           />
           <blockquote class="testimonial--text">
@@ -435,8 +438,9 @@
         </div>
         <div class="test__card-slide test__card-slide--3" data-slide="3">
           <img
-            class="test__card--img"
-            src="img/testimonial/Steve Miller.jpg"
+            class="test__card--img lazy-img"
+            data-src="img/testimonial/Steve Miller.jpg"
+            src="img/testimonial/Steve Miller-lazy.jpg"
             alt=" steve Miller picture"
           />
           <blockquote class="testimonial--text">
@@ -447,8 +451,9 @@
         </div>
         <div class="test__card-slide test__card-slide--4" data-slide="4">
           <img
-            class="test__card--img"
-            src="img/testimonial/Hannah Smith.jpg"
+            class="test__card--img lazy-img"
+            data-src="img/testimonial/Hannah Smith.jpg"
+            src="img/testimonial/Hannah Smith-lazy.jpg"
             alt="Hannah Smith picture"
           />
           <blockquote class="testimonial--text">

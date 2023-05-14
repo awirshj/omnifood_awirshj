@@ -43,7 +43,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	height: 96px;
+	height: 80px;
 	padding-right: 3.2rem;
 	padding-left: 2.4rem;
 	width: 100%;
@@ -168,8 +168,6 @@
 .featured--logos img {
 	height: 2.8rem;
 	filter: grayscale(150%) contrast(0.1);
-	/* filter: contrast(1.2); */
-	/* opacity: 50%; */
 }
 /*SECTION: HOW IT WORKS....operations  */
 .section__how {
@@ -190,7 +188,6 @@
 	flex-direction: column;
 	gap: 1.2rem;
 	position: absolute;
-	/* left: -4.8rem; */
 	left: 0;
 	transform: translateX(-50%);
 	top: 2.4rem;
@@ -216,6 +213,10 @@
 }
 /* content */
 .operations__content {
+	display: grid;
+	grid-template-columns: 60fr 40fr;
+	column-gap: 3.2rem;
+
 	/* hidden */
 	visibility: hidden;
 	pointer-events: none;
@@ -225,16 +226,13 @@
 	transition: all 0s;
 }
 .operations__content--active {
-	display: grid;
-	grid-template-columns: 60fr 40fr;
-	column-gap: 3.2rem;
 	/* show content */
 	visibility: visible;
 	pointer-events: initial;
 	opacity: 100;
 	position: initial;
 	transform: translateY(0px);
-	transition: all 0.5s;
+	transition: all 0.8s;
 }
 /* how it work img */
 .step-img {
@@ -276,9 +274,6 @@
 	line-height: 1.6;
 }
 .box__step-text {
-	/* display: flex;
-	flex-direction: column;
-	justify-content: center; */
 	align-items: start;
 	height: fit-content;
 }
@@ -370,25 +365,22 @@
 }
 /* diets */
 .meal--diets {
-	/* background-color: var(--color-background--lighter); */
 	align-self: start;
 	justify-self: center;
 	padding: 1.6rem 0;
-	/* padding: 3.2rem 4.8rem 3.2rem; */
 }
 .all-recipes {
 	width: fit-content;
 }
 /* SECTION: TESTIMONIAL--TESTIMONIAL CARDS */
 .section__testimonial {
-	height: 130rem;
+	height: 115rem;
 }
 div.test__card-slider {
 	position: relative;
-	/* width: 125rem; */
-	margin-top: 20rem;
-	height: 70rem;
-	width: 42rem;
+	margin-top: 18rem;
+	width: 38rem;
+	height: 60rem;
 	padding: 0 !important;
 }
 /* btn for change slide */
@@ -401,37 +393,40 @@ div.test__card-slider {
 	transition: all 0.4s ease-out;
 }
 .test__swapper-container-left {
-	top: 50%;
-	left: 0;
-	transform: translate(-61%, -105%);
-	/* justify-self: flex-end; */
+	bottom: 0;
+	right: 0;
+	transform: translate(250%, -260%);
 }
 .test__swapper-container-right {
-	top: 50%;
+	bottom: 0;
 	right: 0;
-	transform: translate(60%, -103%);
+	transform: translate(370%, -260%);
 }
 .test__swapper--icon {
 	color: var(--color-primary--darker);
-	width: 4.4rem;
-	height: 4.4rem;
+	width: 3.6rem;
+	height: 3.6rem;
+	padding: 1px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 	border-radius: 50%;
-	background-color: var(--color-background--opacity);
+	background-color: var(--color-background--lighter);
 	/* center */
 	transition: all 0.3s ease-out;
 	cursor: pointer;
 }
 .test__swapper--icon:hover {
-	transform: scale(1.1);
+	transform: scale(1.08) translateY(-3px);
 	color: var(--color-primary);
+	box-shadow: inset 0 0 0 1px var(--color-primary--opacity);
 }
 .test__card-slide {
 	background-color: var(--color-background--lighter-1);
 	padding-bottom: 1.6rem;
 	/* center */
 	text-align: center;
-	width: 42rem;
-	height: 70rem;
+	width: 38rem;
+	height: 60rem;
 	/*  */
 	position: absolute;
 	top: 50%;
@@ -444,24 +439,23 @@ div.test__card-slider {
 	overflow: hidden;
 }
 .test__card--img {
-	margin-bottom: 6.4rem;
+	margin-bottom: 4.8rem;
 	width: 100%;
-	/* height: 35%; */
 	filter: brightness(85%);
 	border: 1px solid var(--color-primary--opacity);
 	border-bottom: none;
 }
 .testimonial--text {
 	color: var(--color-secondary--text--lighter);
-	font-weight: 600;
-	font-size: 2rem;
+	font-weight: 500;
+	font-size: 1.8rem;
 	text-align: left;
 	margin: 0 3.2rem 3.2rem 4.8rem;
 	line-height: 1.6;
 }
 .test--author {
 	color: var(--color-secondary--text);
-	font-size: 2rem;
+	font-size: 1.7rem;
 	font-weight: 500;
 	text-align: left;
 	margin-left: 4.8rem;
@@ -469,6 +463,7 @@ div.test__card-slider {
 /* style for content on the cards */
 .test__card-slide.test__card--active {
 	border-bottom: 8px solid var(--color-primary);
+	transition: all 0.2s !important;
 }
 .test__card-slide--1 {
 	z-index: 99;
@@ -479,20 +474,20 @@ div.test__card-slider {
 	z-index: 98;
 	opacity: 60%;
 	transform: translate(-58%, -51%) rotate(22deg);
-	transition: all 0.3s;
+	transition: all 0.4s;
 }
 
 .test__card-slide--3 {
 	z-index: 97;
 	transform: translate(-57%, -50%) rotate(38deg);
 	opacity: 30%;
-	transition: all 0.3s;
+	transition: all 0.4s;
 }
 .test__card-slide--4 {
 	z-index: 96;
 	transform: translate(-52%, -51%) rotate(48deg);
 	opacity: 10%;
-	transition: all 0.3s;
+	transition: all 0.4s;
 }
 .test__card-slide--2 .testimonial--text,
 .test__card-slide--2 .test--author {

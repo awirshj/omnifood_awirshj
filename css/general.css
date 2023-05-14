@@ -39,6 +39,8 @@ body {
 	line-height: 1;
 	font-size: 1.6rem;
 	background-color: var(--color-background);
+	overflow-x: hidden;
+	overflow-y: hidden;
 }
 section {
 	border-top: 1.5px solid var(--color-primary--darker-1);
@@ -212,4 +214,11 @@ in html use a in dive and set the dive's classes to btn */
 .list-flex .list-item .list-icon {
 	width: 3.2rem;
 	height: 3.2rem;
+}
+/* IMG */
+.lazy-img {
+	filter: blur(15px);
+}
+img {
+	transition: filter 0.5s;
 }
